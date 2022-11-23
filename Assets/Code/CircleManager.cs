@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -9,11 +9,8 @@ public class CircleManager : MonoBehaviour
 
     private const float FullAngle = 360;
 
-
     [SerializeField] private int editorCreateCircleAmount;
     [SerializeField] private float verticalDistance;
-
-    // [SerializeField] private List<CircleController> allCircles = new ();
 
     [ContextMenu(nameof(EditorCreate))]
     public void EditorCreate()
